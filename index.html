@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <h1>Login</h1>
+    <form>
+        <div class="form-field">
+            <div><label>Email</label></div>
+            <input type="email" name="email" id="email" placeholder="seu@email.com" onchange="onChangeEmail()" />
+            <div class="error" id="email-required-error">Email é obrigatório</div>
+            <div class="error" id="email-invalid-error">Email inválido</div>
+            <div class="form-field">
+                <div><label>Senha</label></div>
+                <input type="password" name="password" id="password" placeholder="Senha"
+                    onchange="onChangePassword()" />
+                <div class="error" id="password-required-error"> A senha é inválida</div>
+            </div>
+            <div class="button">
+                <button type="button" class="clear" id="recover-password-button" disabled="true" onclick="recoverPassword()">Recuperar
+                    senha</button>
+            </div>
+            <div class="button">
+                <button type="button" class="solid" id="login-button" disabled="true" onclick="login()">Entrar</button>
+            </div>
+            <div class="button">
+                <button type="button" class="outline" onclick="register()">Registrar</button>
+            </div>
+    </form>
+</body>
+
+
+<script src="assets/js/script.js"></script>
+<script src="assets/js/validation.js"></script>
+<script src="assets/js/loading.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth-compat.js"></script>
+<script>
+    const firebaseConfig = {
+
+        apiKey: "AIzaSyCarLHn66hB3uO8DyHbFgvNycFzjX6t9Y8",
+
+        authDomain: "controle-de-gastos-bc0ca.firebaseapp.com",
+
+        projectId: "controle-de-gastos-bc0ca",
+
+        storageBucket: "controle-de-gastos-bc0ca.appspot.com",
+
+        messagingSenderId: "353807848671",
+
+        appId: "1:353807848671:web:2e7ec13d3e20139b9ac56a"
+
+    };
+    firebase.initializeApp(firebaseConfig);
+
+</script>
+</html>
