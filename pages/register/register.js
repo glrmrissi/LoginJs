@@ -7,7 +7,6 @@ function onChangeEmail() {
     toggleRegisterButtonDisable()
 }
 
-
 function onChangePassword() {
     const password = form.password().value
     form.passwordRequiredError().style.display = password ? "none" : "block";
@@ -45,7 +44,7 @@ function isFormValid() {
         return false
     }   
     const confirmPassword = form.confirmPassword().value
-    if (!password !== confirmPassword) {
+    if (password !== confirmPassword) {
         return false
     }
     return true // form é válido
