@@ -1,5 +1,12 @@
 :root {
-    --background-first: #2d2383;
-    --background-button: #a398ff;
-    --font-size-main-p: 1em;
+    --background-first: #282c34;
+    --background-button: #61dafb; 
+    --border-color-main: #61dafb;
+    --font-color-main: #ffffff; 
+    --font-size-main-p: 1em; 
+    --font-color-secondary: #61dafb; 
+    --background-secondary: #20232a; 
+    --button-hover: #21a1f1; 
+    --error-color: #ff7777; 
+    --background-random: url( https://source.unsplash.com/1600x900/?landscape);
 }
