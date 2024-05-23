@@ -4,17 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home-RissiMe</title>
-    <link rel="stylesheet" href="/assets/css/import.css">
-
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="../../assets/css/variables/variables.css">
 </head>
 <body>
     <main style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
-        <h1>Home</h1>
-        <p>Bem vindo a Home Page do meu site!
-        </p>
-        <video width="400px" controls autoplay>
-            <source src="../../assets/video/himeno.mp4" type="video/mp4">
-        </video>
+        <header class="header-container">
+            <button type="button" class="button-logout" onclick="logout()">Sair</button>
+        </header>
+        <div class="list">
+            <li class="expense">
+                <b>07/02/2022</b>
+                <p>R$ 10,00</p>
+                <p>Supermercado</p>
+            </li>
+            <li class="income">
+                <b>06/02/2022</b>
+                <p>R$ 5.000,00</p>
+                <p>Salário</p>
+                <p>Empresa A</p>
+            </li>
+            <li class="expense">
+                <b>06/02/2022</b>
+                <p>EUR 5,00</p>
+                <p>Transporte</p>
+                <p>Metrô ida e volta</p>
+            </li>
+            <li class="expense">
+                <b>04/02/2022</b>
+                <p>USD 15,00</p>
+                <p>Acomodaçao</p>
+                <p>Mensalidade</p>
+            </li>
+        <button class="fab fixed bottom right">+</button>
+        </div>
     </main>
 </body>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth-compat.js"></script>
+<script src="../../firebaseinit.js"></script>
+
+<script src="register.js"></script>
+<script src="../../assets/js/loading.js"></script>
+<script src="../../assets/js/validation.js"></script>
+<script src="../../auth-guard.js"></script>
+<script src="home.js"></script>
 </html>

@@ -3,7 +3,7 @@ function showLoading() {
     div.classList.add('loading');
     const label = document.createElement("label")
     const img = document.createElement("img")
-    img.src = "/assets/img/1497.gif"
+    img.src = "/assets/img/icons8-carregamento-de-pontos-unscreen.gif"
     document.body.appendChild(div)
     label.appendChild(img)
     div.appendChild(label)

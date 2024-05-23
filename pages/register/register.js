@@ -27,7 +27,9 @@ function onChangeConfirmPassword () {
     validatePasswordMatch()
     toggleRegisterButtonDisable()
 }
-
+function login() {
+    window.location.href = "../../index.html"
+}
 
 function register() {
     showLoading();
