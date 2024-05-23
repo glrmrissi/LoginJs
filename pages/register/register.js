@@ -1,8 +1,8 @@
-// firebase.auth().onAuthStateChanged(user => {
-//     if (user) {
-//         window.location.href = "../../pages/home/home.html"
-//     }
-// })
+firebase.auth().onAuthStateChanged(user => {
+    if (user) {
+        window.location.href = "../../pages/home/home.html"
+    }
+})
 
 function onChangeEmail() {
     const email = form.email().value
@@ -23,7 +23,7 @@ function onChangePassword() {
     toggleRegisterButtonDisable()
 }
 
-function onChangeConfirmPassword () {
+function onChangeConfirmPassword() {
     validatePasswordMatch()
     toggleRegisterButtonDisable()
 }
@@ -60,7 +60,7 @@ function validatePasswordMatch() {
     const confirmPassword = form.confirmPassword().value
 
     form.confirmPasswordDoenstMatchError().style.display =
-    password == confirmPassword ? "none" : "block";
+        password == confirmPassword ? "none" : "block";
 }
 
 function toggleRegisterButtonDisable() {
@@ -69,13 +69,13 @@ function toggleRegisterButtonDisable() {
 
 function isFormValid() {
     const email = form.email().value
-    if(!email || !validateEmail(email)) {
+    if (!email || !validateEmail(email)) {
         return false
     }
     const password = form.password().value
-    if(!password || password.length > 6) {
+    if (!password || password.length > 6) {
         return false
-    }   
+    }
     const confirmPassword = form.confirmPassword().value
     if (password !== confirmPassword) {
         return false
@@ -90,6 +90,6 @@ const form = {
     emailRequiredError: () => document.getElementById("email-required-error"),
     password: () => document.getElementById("password"),
     passwordRequiredError: () => document.getElementById("password-required-error"),
-    passwordMinLengthError: () => document.getElementById("password-min-length-error"),  
+    passwordMinLengthError: () => document.getElementById("password-min-length-error"),
     registerButton: () => document.getElementById("register_button")
 }
