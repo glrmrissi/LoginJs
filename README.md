@@ -9,8 +9,9 @@
 - ### JS
 - ### FireBase-Banco de dados
 
+Tentando melhorar cada dia mais!
 
 
 <h1 style="margin-top:5vh;">Créditos para:</h1>
 
-### :cowboy_hat_face: https://github.com/paulorsaf
+:cowboy_hat_face: https://github.com/paulorsaf
